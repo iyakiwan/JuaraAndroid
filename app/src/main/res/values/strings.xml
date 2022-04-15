@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Github Mufti User</string>
+    <string name="users_username">Username</string>
+    <string name="users_name">Name</string>
+    <string name="copyright">© Github User 2021 - Mufti Alie Satriawan</string>
+    <string name="tx_followers">Followers</string>
+    <string name="tx_following">Following</string>
+    <string name="tx_repository">Repository</string>
+    <string name="name_account">Name Account</string>
+    <string name="company_account">Company Account</string>
+    <string name="location_account">Location Account</string>
+    <string name="avatar">Avatar</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Masukkan kata kunci</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="menu_setting">Pengaturan</string>
+    <string name="favorite_button">Favorite Button</string>
+    <string name="favorite">Favorite</string>
+</resources>

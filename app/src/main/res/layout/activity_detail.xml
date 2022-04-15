@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetailActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:contentDescription="@string/avatar"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_label_followers"
+        style="@style/TextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tx_followers"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+        app:layout_constraintTop_toTopOf="@+id/iv_avatar"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/tv_label_following"
+        style="@style/TextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tx_following"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_label_followers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_label_followers"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_followers" />
+
+    <TextView
+        android:id="@+id/tv_label_repository"
+        style="@style/TextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tx_repository"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_label_followers"
+        app:layout_constraintEnd_toStartOf="@+id/tv_label_followers"
+        app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_followers" />
+
+    <TextView
+        android:id="@+id/tv_value_followers"
+        style="@style/TextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_label_followers"
+        app:layout_constraintEnd_toEndOf="@+id/tv_label_followers"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_followers"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/tv_value_following"
+        style="@style/TextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_label_following"
+        app:layout_constraintEnd_toEndOf="@+id/tv_label_following"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_following"
+        tools:text="8" />
+
+    <TextView
+        android:id="@+id/tv_value_repository"
+        style="@style/TextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_label_repository"
+        app:layout_constraintEnd_toEndOf="@+id/tv_label_repository"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_repository"
+        tools:text="53" />
+
+    <ImageView
+        android:id="@+id/iv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/name_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_avatar"
+        app:srcCompat="@drawable/ic_account" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_name"
+        app:layout_constraintTop_toTopOf="@+id/iv_name"
+        tools:text="Name" />
+
+    <ImageView
+        android:id="@+id/iv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/company_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_name"
+        app:srcCompat="@drawable/ic_company" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        style="@style/TextNormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_company"
+        app:layout_constraintTop_toTopOf="@+id/iv_company"
+        tools:text="Company" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/location_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_company"
+        app:srcCompat="@drawable/ic_location" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/TextNormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_location"
+        app:layout_constraintTop_toTopOf="@+id/iv_location"
+        tools:text="Location" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_github_detail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading_search.json"
+        app:lottie_loop="true" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_github_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_location"
+        app:tabTextColor="@android:color/white" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_github_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs_github_detail">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_favorite"
+        android:focusable="true"
+        android:contentDescription="@string/favorite_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
